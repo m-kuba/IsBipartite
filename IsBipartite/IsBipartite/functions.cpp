@@ -6,11 +6,12 @@
 /// 
 /// Funkcja wykorzystuje algorytm BFS do sprawdzenia, czy graf jest dwudzielny. 
 /// W przypadku, gdy graf jest dwudzielny, wierzcho³ki zostaj¹ podzielone na 
-/// dwie grupy. W przeciwnym przypadku funkcja zwraca false.
+/// dwie grupy. Jeœli nie, funkcja zwraca false.
 /// @param graph Obiekt grafu.
 /// @param group1 Wektor przechowuj¹cy jedn¹ grupê wierzcho³ków.
 /// @param group2 Wektor przechowuj¹cy drug¹ grupê wierzcho³ków.
 /// @return true, jeœli graf jest dwudzielny, w przeciwnym razie false.
+/// 
 bool isBipartite(const Graph& graph, vector<int>& group1, vector<int>& group2) {
     vector<int> colors(graph.vertices, -1);  // Kolory wierzcho³ków: -1 = niezbadany, 0 = grupa 1, 1 = grupa 2
     queue<int> q;
@@ -91,7 +92,7 @@ void readGraphFromFile(const string& filename, Graph& graph) {
 /// @brief Zapisuje wynik sprawdzenia grafu do pliku.
 /// 
 /// Funkcja zapisuje wynik sprawdzenia, czy graf jest dwudzielny. Je¿eli graf jest 
-/// dwudzielny, zapisuje równie¿ grupy wierzcho³ków. Jeœli nie jest, zapisuje stosowny komunikat.
+/// dwudzielny, zapisuje równie¿ grupy wierzcho³ków. Jeœli nie jest, zapisuje odpowiedni komunikat.
 /// @param filename Nazwa pliku wyjœciowego.
 /// @param isBipartite Informacja, czy graf jest dwudzielny.
 /// @param group1 Wektor z pierwsz¹ grup¹ wierzcho³ków.

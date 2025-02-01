@@ -1,11 +1,13 @@
 /// @file main.cpp
-/// @brief G³ówna funkcja programu obs³uguj¹ca wczytywanie, sprawdzanie i zapis wyników.
+/// @brief Funkcje wczytywania, sprawdziania i zapisu.
+/// 
 #include "functions.h"
 
 /// @brief Funkcja g³ówna programu.
-/// @param argc Liczba argumentów wiersza poleceñ.
-/// @param argv Tablica argumentów wiersza poleceñ.
+/// @param argc Liczba argumentów.
+/// @param argv Tablica argumentów.
 /// @return Kod zakoñczenia programu.
+
 int main(int argc, char* argv[]) {
     if (argc < 3) {
         cerr << "Usage: " << argv[0] << " <input_file> <output_file>\n";

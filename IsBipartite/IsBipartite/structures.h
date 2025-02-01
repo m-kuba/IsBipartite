@@ -1,5 +1,5 @@
 /// @file structures.h
-/// @brief Plik nag³ówkowy zawieraj¹cy definicjê struktury grafu.
+/// @brief Plik nag³ówkowy zawieraj¹cy sdtrukturê grafu.
 #pragma once
 #include <vector>
 #include <iostream>
@@ -15,7 +15,7 @@ using namespace std;
 /// Zawiera równie¿ funkcje do dodawania krawêdzi do grafu.
 struct Graph {
     int vertices; ///< Liczba wierzcho³ków w grafie.
-    vector<vector<int>> adjacencyList; ///< Lista s¹siedztwa reprezentuj¹ca graf.
+    vector<vector<int>> adjacencyList; ///< Lista s¹siedztwa wierzcho³ków grafu.
 
     /// @brief Konstruktor grafu.
     /// 

@@ -5,11 +5,11 @@
 
 /// @brief Sprawdza, czy graf jest dwudzielny.
 /// 
-/// Funkcja ta wykorzystuje algorytm BFS do sprawdzenia, czy graf jest dwudzielny.
+/// Funkcja wykorzystuje algorytm BFS do sprawdzenia, czy graf jest dwudzielny.
 /// @param graph Obiekt grafu.
 /// @param group1 Wektor przechowuj¹cy jedn¹ grupê wierzcho³ków.
 /// @param group2 Wektor przechowuj¹cy drug¹ grupê wierzcho³ków.
-/// @return true, jeœli graf jest dwudzielny, w przeciwnym razie false.
+/// @return true, jeœli graf jest dwudzielny, jeœli nie, false.
 bool isBipartite(const Graph& graph, vector<int>& group1, vector<int>& group2);
 
 /// @brief Wczytuje graf z pliku wejœciowego.
